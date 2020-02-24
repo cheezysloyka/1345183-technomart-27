@@ -57,6 +57,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: space-around;
 
+  box-sizing: border-box;
   width: 150px;
   color: #ffffff;
   font-size: 17px;
@@ -70,14 +71,10 @@ input[type="radio"].visually-hidden {
 .main-navigation a path {
   fill: #6a7180;
 }
-a.logo {
-  box-sizing: border-box;
+.logo {
   width: 220px;
   display: flex;
-  justify-content: center;
   align-content: center;
-  padding-left: 0;
-  padding-right: 0;
   background: #ee3643;
 }
 
@@ -269,6 +266,11 @@ a.checkout:focus {
 }
 main {
   font-family: "Cuprum", Arial, sans-serif;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 main ul {
   list-style: none;
@@ -497,9 +499,8 @@ footer a, .footer-contacts, .footer-contacts a {
   font-weight: 400;
   color: #000000;
   background: #ffffff;
-  text-decoration: none;
 }
-.username button {
+.username .exit {
   border: none;
   background: transparent;
 }
@@ -851,11 +852,14 @@ footer a, .footer-contacts, .footer-contacts a {
   max-width: 100%;
 }
 
-.catalog-item .title {
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
   margin-bottom: 15px;
+  text-transform: none;
 }
 
 .catalog-item .discount {
