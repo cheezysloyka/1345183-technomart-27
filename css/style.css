@@ -140,23 +140,30 @@ input[type="radio"].visually-hidden {
 .search {
   width: 270px;
 }
-.search button {
-  width: 49px;
-  height: 41px;
 
-
-  background-color: #293449;
-  border: none;
-  cursor: pointer;
+.search form {
+  position: relative;
+  width: 270px;
 }
 .search input[type="text"] {
-
-
   color: #ffffff;
 
   background-color: #293449;
   border: none;
   height: 41px;
+  padding-left: 49px;
+}
+.search button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 41px;
+
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .search path {
   fill: #6a7180;
@@ -1103,7 +1110,56 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:focus {
   color: #ee3643;
 }
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -470px;
 
+  background: #ffffff url("../img/map-big.jpg") no-repeat;
+  box-sizing: border-box;
+  width: 940px;
+  height: 446px;
+  box-shadow: -1px 24px 50px -4px rgba(0,0,0,0.75);
+
+  z-index: 999999;
+}
+.modal-map .modal-close {
+  font-size: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-map .modal-close::before {
+  content: "";
+  position: absolute;
+
+  top: -3px;
+  right: 10px;
+  transform: rotate(45deg);
+
+  width: 4px;
+  height: 30px;
+  background: #ee3643;
+}
+.modal-map .modal-close::after {
+  content: "";
+  position: absolute;
+
+  top: -3px;
+  right: 10px;
+  transform: rotate(135deg);
+
+  width: 4px;
+  height: 30px;
+  background: #ee3643;
+}
 .modal-login {
   display: none;
   position: fixed;
@@ -1565,7 +1621,7 @@ input[type="radio"].visually-hidden {
 .filter-input:disabled + label {
   color: #000000;
 
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .filter li {
   margin-bottom: 16px;
@@ -1596,7 +1652,10 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  opacity: 0.6;
+}
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
 }
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -1610,7 +1669,10 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  opacity: 0.6;
+}
+.filter-input-checkbox:checked:hover + label::after {
+  opacity: 1;
 }
 .filter-input-radio + label::before {
   content: "";
@@ -1623,7 +1685,10 @@ input[type="radio"].visually-hidden {
   height: 25px;
 
   background: url("../img/radio-off.svg") no-repeat;
-  background-color: #ffffff;
+  opacity: 0.6;
+}
+.filter-input-radio:hover + label::before {
+  opacity: 1;
 }
 .filter-input-radio:checked + label::after {
   content: "";
@@ -1636,7 +1701,10 @@ input[type="radio"].visually-hidden {
   height: 25px;
 
   background: url("../img/radio-on.svg") no-repeat;
-  background-color: #ffffff;
+  opacity: 0.6;
+}
+.filter-input-radio:checked:hover + label::after {
+  opacity: 1;
 }
 .filter button {
   display: flex;
@@ -1739,10 +1807,11 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 .pagination-list .next {
+  text-transform: uppercase;
   width: 140px;
 }
 .pagination-list a:hover {
-  border: 1px solid #dee3e5;
+  border: 1px solid #bdc6ca;
 }
 .pagination-list a:focus {
   border: 1px solid #ee3643;
