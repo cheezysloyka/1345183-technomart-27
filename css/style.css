@@ -98,11 +98,25 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   display: flex;
-  width: 460px;
+  width: 450px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+.cart {
+  padding-right: 30px;
+}
+.cart svg {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.fav {
+  padding-right: 28px;
+}
+.fav svg {
+  padding-left: 17px;
+  padding-right: 12px;
 }
 .main-navigation-link {
   display: flex;
@@ -176,10 +190,19 @@ input[type="radio"].visually-hidden {
 
   background-color: #212a3a;
 }
+.search:hover svg {
+  fill: #ffffff;
+}
 .search input:focus {
   color: #000000;
 
-  background-color: #212a3a;
+  background: #ffffff;
+}
+.search input:focus + button svg {
+  fill: red;
+}
+.search input:active {
+  background: #ffffff;
 }
 .checkout {
   box-sizing: border-box;
@@ -264,7 +287,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 .user-menu {
-  width: 300px;
   margin: 0;
   padding: 0;
 
@@ -295,7 +317,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .user-menu .login {
-  width: 120px;
+  width: 121px;
+  margin-right: 10px;
 }
 .login path, .login polygon {
   fill: #c5c5c5;
