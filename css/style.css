@@ -182,27 +182,20 @@ input[type="radio"].visually-hidden {
 .search path {
   fill: #6a7180;
 }
-.search path:hover {
+.search input[type="text"]:hover {
+  background: #212a3a;
+}
+.search input[type="text"]:hover + button[type="submit"] path {
   fill: #ffffff;
 }
-.search input:hover {
-  color: #ffffff;;
-
-  background-color: #212a3a;
-}
-.search:hover svg {
-  fill: #ffffff;
-}
-.search input:focus {
-  color: #000000;
-
+.search input[type="text"]:focus {
   background: #ffffff;
 }
-.search input:focus + button svg {
-  fill: red;
+.search input[type="text"]:focus + button[type="submit"] path {
+  fill: #ee3643;
 }
-.search input:active {
-  background: #ffffff;
+.search input[type="text"]:active + button[type="submit"] path {
+  fill: #ee3643;
 }
 .checkout {
   box-sizing: border-box;
@@ -306,10 +299,11 @@ input[type="radio"].visually-hidden {
 }
 .user-menu a {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  padding-top: 11px;
-  padding-bottom: 15px;
   background: #ffffff;
+  box-sizing: border-box;
+  height: 48px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -319,6 +313,11 @@ input[type="radio"].visually-hidden {
 .user-menu .login {
   width: 121px;
   margin-right: 10px;
+  padding-right: 26px;
+}
+.login svg {
+  padding-right: 14px;
+  padding-left: 14px;
 }
 .login path, .login polygon {
   fill: #c5c5c5;
