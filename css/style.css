@@ -89,15 +89,16 @@ input[type="radio"].visually-hidden {
 }
 .site-navigation {
   display: flex;
-  width: 490px;
+  box-sizing: border-box;
+  width: 500px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
-
 .user-navigation {
   display: flex;
+  box-sizing: border-box;
   width: 450px;
   margin: 0;
   padding: 0;
@@ -105,11 +106,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .cart {
-  padding-right: 30px;
+  padding-right: 29px;
 }
 .cart svg {
-  padding-left: 17px;
-  padding-right: 17px;
+  margin-left: 19px;
+  margin-right: 16px;
 }
 .fav {
   padding-right: 28px;
@@ -121,7 +122,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-link {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   box-sizing: border-box;
   width: 150px;
@@ -252,7 +253,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 67px;
 }
 .address a {
   position: relative;
@@ -295,7 +295,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
 
   list-style: none;
@@ -304,6 +304,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  margin-left: 67px;
 }
 .user-menu a {
   display: flex;
@@ -349,32 +350,31 @@ input[type="radio"].visually-hidden {
 
 .main-menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
   width: 100%;
   margin: 0;
   padding: 0;
   background: #32425c;
   border-bottom: 7px solid #293449;
-  margin-top: 42px;
-  margin-bottom: 62px;
-
+  margin-top: 38px;
+  margin-bottom: 60px;
+  padding-left: 23px;
+  padding-right: 23px;
   list-style: none;
 }
 .main-menu a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-decoration: none;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   background: #32425c;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .main-menu a:hover {
   background: #293449;
@@ -386,6 +386,7 @@ input[type="radio"].visually-hidden {
 .main-wrapper {
   width: 100%;
   background-color: #ffffff;
+  margin-top: 59px;
 }
 .main-wrapper .container {
   display: flex;
@@ -403,13 +404,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-right: 20px;
-  margin-top: 57px;
 }
 .features-column:nth-child(2) {
   margin-right: 0;
 }
 .feature-item {
   display: flex;
+  position: relative;
   box-sizing: border-box;
   width: 300px;
   height: 123px;
@@ -418,8 +419,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 25px;
+  padding-top: 21px;
+  padding-left: 23px;
+}
+.feature-item svg {
+  position: absolute;
+  right: 31px;
+  bottom: 29px;
 }
 .feature-item h3 {
   font-size: 24px;
@@ -428,10 +434,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 12px;
 }
-.feature-item button {
+.feature-item a {
   display: flex;
   justify-content: center;
-  align-content: center;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -441,29 +446,50 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
   width: 136px;
-  height: 38px;
+  height: 27px;
   cursor: pointer;
+  padding-top: 13px;
 }
-.feature-item button:hover {
+.feature-item a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-.feature-item button:active {
+.feature-item a:active {
   background: rgba(0, 0, 0, 0.3);
 }
-.item-1 {
+.materials {
   background-color: #ffbf47;
 }
-.item-2 {
+.materials svg {
+  right: 42px;
+  bottom: 27px;
+}
+.tool {
   background-color: #3bbce3;
 }
-.item-3 {
+.tool svg {
+  right: 27px;
+  bottom: 29px;
+}
+.equipment {
   background-color: #dc91d8;
 }
-.item-4 {
+.equipment svg {
+  right: 31px;
+  bottom: 29px;
+}
+.sales {
   background-color: #8ed78f;
 }
-.item-5 {
+.sales svg {
+  right: 45px;
+  bottom: 25px;
+}
+.shipping {
   background-color: #ffc047;
+}
+.shipping svg {
+  right: 31px;
+  bottom: 29px;
 }
 .feature-item:last-child {
   margin-bottom: 0;
@@ -584,17 +610,18 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 .popular-items {
-  width: 940px;
-  margin-top: 55px;
-
+  width: 100%;
+  margin-top: 51px;
 }
 .popular-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   height: 90px;
   background: #f9f5f0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 5px;
 }
 .popular-title h2 {
   font-family: "Cuprum", Arial, sans-serif;
@@ -603,7 +630,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
-  margin-left: 27px;
+  margin-left: 28px;
 }
 .popular-title .button {
   display: flex;
@@ -617,10 +644,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-transform: uppercase;
   background: #ee3643;
-  border-radius: 5px;
-  width: 255px;
+  border-radius: 3px;
+  width: 253px;
   height: 38px;
-  margin-right: 25px;
+  margin-right: 24px;
 }
 .popular-title .button:hover {
    background: #ca2c37;
@@ -743,13 +770,13 @@ input[type="radio"].visually-hidden {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   text-transform: none;
 }
 
 .catalog-item .discount {
   min-height: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
 
   color: #999;
@@ -791,7 +818,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 20px;
   margin-bottom: 67px;
 }
 .brand-item {
@@ -814,7 +840,7 @@ input[type="radio"].visually-hidden {
 .service-wrapper {
   width: 100%;
   background-color: #f4f8f9;
-  margin-bottom: 75px;
+  padding-bottom: 75px;
 }
 .service-wrapper .container {
   display: flex;
@@ -831,8 +857,8 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 68px;
-  margin-bottom: 36px;
+  margin-top: 60px;
+  margin-bottom: 27px;
 }
 .service p {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1130,6 +1156,13 @@ input[type="radio"].visually-hidden {
 .footer-social a:focus {
   background-color: #ee3643;
 }
+.footer-copyright {
+  display: inline-block;
+  max-width: 230px;
+}
+.footer-copyright span {
+  display: block;
+}
 .footer-copyright a {
   color: #ffd180;
 }
@@ -1138,6 +1171,10 @@ input[type="radio"].visually-hidden {
 }
 .footer-copyright a:focus {
   color: #ee3643;
+}
+.footer-copyright-wrapper {
+  display: flex;
+  max-width: 300px;
 }
 .modal-map {
   display: none;
@@ -1396,7 +1433,10 @@ input[type="radio"].visually-hidden {
   background: #ee3643;
 }
 /* catalog.html */
-.user-navigation-catalog {
+.user-navigation-catalog .cart {
+  padding-right: 25px;
+}
+.username-catalog {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -1406,18 +1446,26 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
 }
-.username {
-  width: 300px;
-  height: 46px;
+.username-catalog .username {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
+  width: 300px;
+  height: 46px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background: #ffffff;
+}
+.log-in svg {
+  margin-right: 30px;
+}
+.username-catalog .username,
+.username-catalog .submenu {
+  margin-left: 53px;
 }
 .username .exit {
   border: none;
