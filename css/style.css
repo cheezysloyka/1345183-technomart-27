@@ -386,7 +386,6 @@ input[type="radio"].visually-hidden {
 .main-wrapper {
   width: 100%;
   background-color: #ffffff;
-  margin-top: 59px;
 }
 .main-wrapper .container {
   display: flex;
@@ -397,6 +396,7 @@ input[type="radio"].visually-hidden {
 .features {
   display: flex;
   width: 100%;
+  padding-top: 59px;
 }
 .features-column {
   box-sizing: border-box;
@@ -840,7 +840,7 @@ input[type="radio"].visually-hidden {
 .service-wrapper {
   width: 100%;
   background-color: #f4f8f9;
-  padding-bottom: 75px;
+  padding-bottom: 68px;
 }
 .service-wrapper .container {
   display: flex;
@@ -857,8 +857,6 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 60px;
-  margin-bottom: 27px;
 }
 .service p {
   font-family: "PT Sans", Arial, sans-serif;
@@ -867,10 +865,17 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin: 0;
 }
+.service-index .service-description {
+  width: 400px;
+}
+.service-index .service-title {
+  margin-top: 58px;
+  margin-bottom: 29px;
+}
 .service-slider {
   display: flex;
   width: 100%;
-  margin-top: 75px;
+  margin-top: 65px;
   padding-bottom: 98px;
 }
 .service-slider-list {
@@ -974,8 +979,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us .container {
   font-family: "Cuprum", Arial, sans-serif;
-  margin-top: 82px;
-  margin-bottom: 86px;
+  margin-top: 10px;
 }
 .about-us h3 {
   font-size: 30px;
@@ -983,13 +987,16 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 27px;
 }
-.about-us p {
+.company p {
+  display: inline-block;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-top: 37px;
+  margin-bottom: 22px;
 }
 .company {
   width: 540px;
@@ -1000,8 +1007,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 37px;
-  margin-top: 27px;
+  margin-bottom: 29px;
 }
 .company li {
   position: relative;
@@ -1033,7 +1039,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   background: #ee3643;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
   border-radius: 3px;
 }
 .button:hover {
@@ -1042,9 +1048,12 @@ input[type="radio"].visually-hidden {
 .button:focus {
   background: #ba2732;
 }
+.company .button {
+  margin-bottom: 85px;
+}
 .contacts .map {
   display: block;
-  margin-bottom: 37px;
+  margin-bottom: 50px;
   margin-top: 37px;
 }
 .contacts .button {
@@ -1448,7 +1457,6 @@ input[type="radio"].visually-hidden {
 }
 .username-catalog .username {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
   width: 300px;
@@ -1459,9 +1467,13 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   background: #ffffff;
+  padding-left: 9px;
 }
 .log-in svg {
-  margin-right: 30px;
+  margin-right: 8px;
+}
+.exit svg {
+  margin-left: 36px;
 }
 .username-catalog .username,
 .username-catalog .submenu {
@@ -1489,7 +1501,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .submenu a {
    display: block;
@@ -1532,8 +1544,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 23px;
   margin-bottom: 23px;
+  margin-top: 20px;
 }
 .breadcrumbs li {
   position: relative;
@@ -1570,7 +1582,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background: #f2f6f8;
   margin: 0;
-  padding: 34px 0 34px 30px;
+  padding: 29px 0 29px 28px;
   margin-bottom: 20px;
 }
 .catalog-columns {
@@ -1596,10 +1608,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background: #f7f3ec;
   margin: 0;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 13px;
-  margin-bottom: 20px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  margin-bottom: 12px;
 }
 .filter fieldset {
   padding: 0;
@@ -1614,9 +1626,17 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  margin-bottom: 14px;
   border-top: 1px solid #e5e5e5;
+}
+.battery legend {
+  padding-top: 20px;
+}
+.filter-item legend {
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
 }
 .range-filter {
   width: 220px;
@@ -1678,8 +1698,9 @@ input[type="radio"].visually-hidden {
 .price-controls input {
   box-sizing: border-box;
   width: 95px;
-  padding: 12px 0;
-  padding-left: 25px;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-left: 23px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
@@ -1701,7 +1722,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 .filter li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 .filter label {
@@ -1783,12 +1804,13 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked:hover + label::after {
   opacity: 1;
 }
+
 .filter button {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 140px;
-  height: 40px;
+  height: 39px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1796,26 +1818,26 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
-
-  margin-top: 72px;
+  margin-top: 57px;
 }
 .sorting {
   display: flex;
   justify-content: space-between;
   background: #f7f3ec;
-  height: 40px;
+  height: 37px;
   margin-bottom: 20px;
 }
 .sorting ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 470px;
+  width: 443px;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 17px;
 }
 .sorting a {
   display: inline-block;
@@ -1842,6 +1864,9 @@ input[type="radio"].visually-hidden {
   border: none;
   fill: #c5c5c5;
 }
+.up svg {
+  margin-left: 30px;
+}
 .sorting .sorting-btn:hover,
 .sorting .sorting-btn:focus {
   border: none;
@@ -1859,11 +1884,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 52px;
+  margin-top: 26px;
   margin-bottom: 60px;
 }
 .pagination-list li {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .pagination-list li:last-child {
   margin-right: 0;
@@ -1872,8 +1897,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
 
   color: #000000;
 
