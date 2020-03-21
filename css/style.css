@@ -90,6 +90,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-content: center;
+  position: relative;
   background: #ee3643;
   width: 220px;
   height: 42px;
@@ -250,7 +251,7 @@ input[type="radio"].visually-hidden {
   padding-left: 52px;
   padding-right: 72px;
 }
-.description p {
+.header-info .description p {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
@@ -772,6 +773,10 @@ input[type="radio"].visually-hidden {
 .catalog-item .actions {
   display: none;
 }
+.buy svg {
+  opacity: 0.3;
+  margin-right: 10px;
+}
 .actions .buy:hover {
   border-color: #5fbb2d;
   border-bottom-color: #367315;
@@ -928,7 +933,7 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .service-slider-item span {
   display: inline-block;
@@ -978,6 +983,12 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 22px;
+}
+.service-slider label[for="service-2"] {
+  padding-top: 17px;
+}
+.service-slider label[for="service-3"] {
+  padding-top: 14px;
 }
 #service-1:checked ~ .service-slider #service-slide1,
 #service-2:checked ~ .service-slider #service-slide2,
@@ -1038,15 +1049,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 37px;
 }
 .company li {
   position: relative;
   padding-left: 37px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
-.company li:last-child {
-  margin-bottom: 0;
+.company li:nth-child(2) {
+  margin-bottom: 19px;
 }
 .company li::before {
   content: "";
@@ -1054,7 +1065,7 @@ input[type="radio"].visually-hidden {
 
   width: 26px;
   height: 2px;
-  top: 8px;
+  top: 10px;
   left: 0;
   background-repeat: no-repeat;
   background: #ee3643;
@@ -1092,7 +1103,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   margin: 0;
 }
-.main-footer a, .footer-contacts, .footer-contacts a {
+.main-footer a, .footer-contacts p, .footer-contacts a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1131,6 +1142,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
+.footer-contacts {
+  margin-right: 20px;
+}
 .footer-navigation-bottom a {
   color: #ffd180;
 }
@@ -1148,13 +1162,21 @@ input[type="radio"].visually-hidden {
 }
 .footer-bottom-wrapper .container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 33px;
   padding-bottom: 30px;
 }
+.footer-bottom-wrapper p {
+  margin-right: 160px;
+}
+.footer-copyright-wrapper p {
+  margin: 0;
+}
+.footer-email {
+   margin-left: 119px;
+ }
 .footer-navigation-bottom {
-  height: 45px;
   margin-bottom: 52px;
+  margin-left: 3px;
 }
 .footer-navigation-bottom ul {
   width: 540px;
@@ -1166,8 +1188,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   width: 134px;
-  margin: 0 auto;
-  padding: 0;
+  margin-left: 100px;
 }
 .footer-social a {
   display: flex;
@@ -1190,6 +1211,8 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .footer-copyright a {
+  font-size: 16px;
+  line-height: 18px;
   color: #ffd180;
 }
 .footer-copyright a:hover {
@@ -1460,6 +1483,7 @@ input[type="radio"].visually-hidden {
 }
 /* catalog.html */
 .user-navigation-catalog .cart {
+  background: #ee3643;
   padding-right: 25px;
 }
 .username-catalog {
@@ -1668,7 +1692,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   height: 41px;
   margin-bottom: 10px;
-  padding-top: 39px;
+  padding-top: 38px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -1856,13 +1880,22 @@ input[type="radio"].visually-hidden {
 }
 .sorting ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 443px;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 17px;
+}
+.sorting li:nth-child(1) {
+  margin-right: 72px;
+}
+.sorting li:nth-child(2) {
+  margin-right: 66px;
+}
+.sorting li:nth-child(3) {
+  margin-right: 33px;
 }
 .sorting a {
   display: inline-block;
