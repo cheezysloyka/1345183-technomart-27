@@ -772,7 +772,21 @@ input[type="radio"].visually-hidden {
 .catalog-item .actions {
   display: none;
 }
-
+.actions .buy:hover {
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
+  background: #5fbb2d;
+}
+.actions .buy:focus {
+  border-color: #518534;
+  background: #518534;
+}
+.actions .bookmark:hover {
+  border-color: #32425c;
+}
+.actions .bookmark:focus {
+  opacity: 0.5;
+}
 .catalog-item .image {
   width: 218px;
   height: 168px;
@@ -1472,6 +1486,9 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
   padding-left: 9px;
 }
+.log-in {
+  color: #000000;
+}
 .log-in svg {
   margin-right: 8px;
 }
@@ -1497,6 +1514,9 @@ input[type="radio"].visually-hidden {
 }
 .log-in:focus path, .exit:focus path, .exit:focus polygon {
   fill: #c5c5c5;
+}
+.log-in:focus {
+  opacity: 0.5;
 }
 .submenu {
   display: flex;
@@ -1812,6 +1832,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-content: center;
+  box-sizing: border-box;
   width: 140px;
   height: 39px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1823,6 +1844,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   cursor: pointer;
+  padding-top: 9px;
   margin-top: 57px;
 }
 .sorting {
