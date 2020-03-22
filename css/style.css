@@ -249,7 +249,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 320px;
   padding-left: 52px;
-  padding-right: 72px;
+  padding-right: 71px;
 }
 .header-info .description p {
   font-family: "Cuprum", Arial, sans-serif;
@@ -472,7 +472,24 @@ input[type="radio"].visually-hidden {
   background: rgba(0, 0, 0, 0.3);
 }
 .materials {
+  position: relative;
   background-color: #ffbf47;
+}
+.materials .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.materials .flag-new {
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .materials svg {
   right: 42px;
