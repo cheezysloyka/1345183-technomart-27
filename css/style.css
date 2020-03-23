@@ -966,6 +966,10 @@ input[type='radio'].visually-hidden
 
     margin-bottom: 7px;
 }
+.catalog-items-index
+{
+    margin-bottom: 3px;
+}
 .catalog-item
 {
     font-size: 16px;
